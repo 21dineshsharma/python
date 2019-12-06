@@ -1,0 +1,5 @@
+def rightalign(x):
+    print(str("_" * (90-len(x)) + x))
+
+a = input("give your name ?")
+rightalign(a)
