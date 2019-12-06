@@ -1,0 +1,61 @@
+
+'''
+x = input ("numbeer of minutes?")
+y = input ("number of seconds ?")
+u= int(x) + (int(y)/60)
+z = str(u)
+print("you have entered " + (x) + " minutes and " + y + " seconds, which is equal to " + z + " seconds")
+
+
+a = input("number of km ?")
+b = int(a) / 1.61
+print("numeber of miles " + str(b))
+
+q = b/u
+print(q)
+'''
+'''
+import math
+r = float(input(" what is the radius ?"))
+p=math.pi
+vol = (4/3)* p * r*r*r
+print(vol)
+
+'''
+
+'''
+def checkfer(a,b,c,n):
+    for a in range(1,10):
+        for b in range(1,10):
+            for c in range(1,10):
+                for n in range(3,50):
+                    if a**n + b**n == c**n:
+                        print (a,b,c,n,"first")
+    else:
+        print(a,b,c,n,"second")
+x = int(input("write a"))
+y = int(input("write b"))
+z = int(input("write c"))
+w = int(input("write n"))
+checkfer(x,y,z,w)
+'''
+'''
+def is_triangle(a,b,c):
+    if a>b+c or b>a+c or c>a+b:
+        print("not possible")
+    else:
+        print("possible")
+
+x = int(input(" first side"))
+y = int(input("sescond side"))
+z= int(input("third side"))
+is_triangle(x,y,z)
+'''
+
+'''
+din = open("testfile.doc", 'w')
+din.write("this is the first line of my text file\n")
+din.write("this is the second line of my file \n")
+din.close()
+
+'''
