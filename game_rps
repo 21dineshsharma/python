@@ -1,0 +1,23 @@
+def rps():
+    print("rock")
+    print("paper")
+    print("scissor")
+    player1 = input("player one move ? ")
+    print("** No cheating **\n \n" *10)
+    player2 = input("player two move ? ")
+
+    if player1 == player2:
+        print("its a draw,try again")
+    elif (player1 == "rock" and player2 == "scissor") or (player1 == "paper" and player2 == "rock") or (player1 == "scissor" and player2 == "paper"):
+        print("Player one wins")
+    elif (player2 == "rock" and player1 == "scissor") or (player2 == "paper" and player1 == "rock") or (player2 == "scissor" and player1 == "paper"):
+        print("Player Two wins")
+    else:
+        print("incorrect input,Please try again")
+while True:
+    rps()
+    rest = input("play again ? y/n ")
+    if rest == "y":
+        rps()
+    if rest == "n":
+        break 
