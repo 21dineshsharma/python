@@ -1,0 +1,14 @@
+import json
+
+with open("test.json") as din:
+    data = json.load(din)
+
+#print(data)
+
+for parsedata in data.value():
+    if isinstance(parsedata, dict):
+        for parsedata1 in parsedata.items():
+            print("key" + parsedata1.key() + "value" + parsedata1.value())
+        
+    else:
+        print("key" + parsedata.key() + "value" + parsedata.value())
