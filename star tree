@@ -1,0 +1,2 @@
+for x,y in zip(range(9,0,-1),range(1,18,2)):
+    print(" " * x + "*" * y)
